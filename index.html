@@ -12,7 +12,7 @@
         <div class="navigationContainer">
             <div class="navigationColumn">
                 <div>Already have an Intuit account?</div>
-                <div>I forgot my User ID or Password</div>
+                <div><a href='#' class='forgot'>I forgot my User ID or Password</a></div>
             </div>
             <div class="navigationColumn">
                 <button id="signIn">
@@ -37,8 +37,23 @@
                         <br>
                     <a href='#' class='learnMore'>Learn more</a>
                     </div>
-                <form>
-                    <!--FORMS AND OL LISTING HERE-->
+                <form id="form-sign-up" action="#" method="post" autocomplete="off" novalidate="">
+                    <fieldset class="email-fieldset">
+                        <label class="email-label" for="email-address">Email Address</label>
+                        <br>
+                        <input type="email" name="email-address">
+                    </fieldset>
+                    <fieldset class="phone-fieldset">
+                        <label class="phone-label">Phone (recommended)</label>
+                        <br>
+                        <input type="tel" name="phone-number">
+                        <p>Standard call, messaging or data rates may apply.</p>
+                    </fieldset>
+                    <fieldset class="password-fieldset">
+                        <label class="password-label">Password</label>
+                        <br>
+                        <input type="password" name="password">
+                    </fieldset>
                 </form>
             </div>
             <footer class="signUpFooter"></footer>
