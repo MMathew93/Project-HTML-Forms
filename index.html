@@ -12,7 +12,7 @@
         <div class="navigationContainer">
             <div class="navigationColumn">
                 <div>Already have an Intuit account?</div>
-                <div><a href='#' class='forgot'>I forgot my User ID or Password</a></div>
+                <div><a class='forgot' href='#'>I forgot my User ID or Password</a></div>
             </div>
             <div class="navigationColumn">
                 <button id="signIn">
@@ -23,20 +23,20 @@
     </div>
     <div class="header">
         <div class="logoContainer">
-            <div id="logo"><img src="https://www.intuit.com/content/dam/intuit/intuitcom/company/images/icom-logo-ecosystem-lockup-2line.jpg" alt="Intuit logo" width="390" height="150"></div>
+            <div id="logo"><img
+                    src="https://www.intuit.com/content/dam/intuit/intuitcom/company/images/icom-logo-ecosystem-lockup-2line.jpg"
+                    alt="Intuit logo" width="390" height="150"></div>
         </div>
     </div>
     <div class="mainContainer">
-        <div id="logoHeaderContainer">
-            <header id="logoHeader"></header>
-        </div>
+        <header id="logoHeader"></header>
         <div class="signUpWrapper">
             <div id="signUpBox">
                 <header class=signUpHeader>Create an Intuit account</header>
-                    <div class="subHeader">One account for everything Intuit, including Mint.
-                        <br>
-                    <a href='#' class='learnMore'>Learn more</a>
-                    </div>
+                <div class="subHeader">One account for everything Intuit, including Mint.
+                    <br>
+                    <a class='learnMore' href='#'>Learn more</a>
+                </div>
                 <form id="form-sign-up" action="#" method="post" autocomplete="off" novalidate="">
                     <fieldset class="email-fieldset">
                         <label class="email-label" for="email-address">Email Address</label>
@@ -54,12 +54,46 @@
                         <br>
                         <input type="password" name="password">
                     </fieldset>
+                    <button id="create-account">
+                        Create Account
+                    </button>
+                    <p id='terms'>
+                        By clicking Create account, you agree to our
+                        <br>
+                        <a class="terms" href="#">Terms</a>&nbsp;and have read and acknowledge our&nbsp;<a id="privacy"
+                            href="#">Privacy Statement</a>
+                    </p>
                 </form>
             </div>
-            <footer class="signUpFooter"></footer>
+            <footer class="captcha">
+                <p class="captcha2">
+                    Invisible reCAPTCHA by Google <a id="privacy-plicy" href="#">Privacy Policy</a>&nbsp;and&nbsp;<a
+                        id="captcha-terms" href="#">Terms of Use</a>.
+                </p>
+            </footer>
         </div>
-        <footer class="mainFooter"></footer>
     </div>
+    <footer class="mainFooter">
+        <div class="footer-links">
+            <ul>
+                <li>
+                    <a id="legal-link" href="#">Legal</a>
+                </li>
+                <li>
+                    <a id="privacy-link" href="#">Privacy</a>
+                </li>
+                <li>
+                    <a id="security-link" href="#">Security</a>
+                </li>
+            </ul>
+        </div>
+        <p id="copyright">
+            © 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are
+            registered trademarks of Intuit Inc.
+            <br>
+            Terms and conditions, features, support, pricing, and service options subject to change without notice.
+        </p>
+    </footer>
 </body>
 
 </html>
